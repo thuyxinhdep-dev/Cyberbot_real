@@ -1,0 +1,86 @@
+# CyberBot .gitignore
+# Add this to your .gitignore file to protect sensitive information
+
+# Environment files with secrets
+.env
+.env.local
+.env.production
+.env.development
+.env.test
+*.env
+
+# API Keys and credentials
+config/secrets.json
+secrets/
+credentials/
+keys/
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+cyberbot.db
+
+# AI Model files (too large for Git)
+*.gguf
+*.bin
+*.safetensors
+models/*.gguf
+models/*.bin
+
+# Logs and temporary files
+logs/
+*.log
+tmp/
+temp/
+cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+backup/
+*.backup
+*.bak
+models/*.gguf
